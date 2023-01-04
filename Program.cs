@@ -26,3 +26,26 @@ for (int i = 0; i < AS.Length; i++)
     Console.Write($"'{AS[i]}'");
 Console.WriteLine("]");
 
+int j = 0;
+
+for (int i = 0; i < AS.Length; i++)
+{
+    if (AS[i].Length <=3)
+    {
+        j++;
+    }
+}
+string [] ASsort = new string [j];
+int k = 0;
+for (int i = 0; i < AS.Length; i++)
+{
+    if (AS[i].Length <= 3)
+    {
+        ASsort[k]=AS[i];
+        k++;
+    }
+}
+Console.Write("ASsort = [");
+for (int i = 0; i < ASsort.Length; i++)
+    Console.Write($"'{ASsort[i]}'");
+Console.WriteLine("]");
