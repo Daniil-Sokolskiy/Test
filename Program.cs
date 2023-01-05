@@ -1,12 +1,12 @@
-﻿string[] AS; // ссылка на массив строк
-int count; // текущее количество строк в массиве
+﻿string[] AS; 
+int count; 
 string s;
-string[] AS2; // дополнительная переменная-ссылка - сохраняет старый массив строк
+string[] AS2; 
 
 Console.WriteLine("Enter strings:");
 
-count = 0; // обнулить количество строк
-AS = new string[count]; // выделить память для 0 строк
+count = 0; 
+AS = new string[count]; 
 
 do
 {
